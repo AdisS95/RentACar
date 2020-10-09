@@ -1,0 +1,293 @@
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+    display: block;
+}
+mark, rp, rt, ruby, summary, time {
+    display: inline;
+}
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html  {
+    width: 100%
+}
+
+body  {
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	color: #666;
+	min-width: 980px;
+	/*background-image: <img src="Rent a car Sikalo\images\bg.jpg>" 0 0 repeat-x #1f1f1f;*/
+	background: url('../images/bg.jpg') 0 0 repeat-x #1f1f1f;
+
+}
+
+.bg  {
+	width: 100%;
+	background: #ebeeec;
+}
+
+.main  {
+    width: 940px;
+     padding: 0;
+    margin: 0 auto;
+    font-size: 0.75em;
+    line-height: 1.5em ;
+     min-width: 940px;
+}
+
+.menu  {
+     height: 62px;
+     display: block;
+     background:  url(../images/bgmeny.jpg) 0 0 repeat-x;
+     float: right;
+     margin-top:  20px;
+     padding:  10px;
+ }
+
+.menu li {
+	display: block;
+	float: left;
+	font-family:  Arial,  Helvetica,  sans-serif;
+	font-size: 13px;
+	padding-left:  14px;
+	padding-right: 14px;
+	text-align: center;
+	width: auto;
+	padding-bottom: 14px;
+	padding-top: 14px;
+}
+
+.menu p {
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.menu li:hover {
+	display: block;
+	background: #F00;
+	text-align: center;
+	height:  auto;
+	text-shadow: 1px 1.5px 0 #b00509;
+}
+
+a  {
+	color: #1799cf;
+	outline: none;
+}
+
+a:hover  {
+	text-decoration: none;
+}
+
+
+.wrapper {
+	width: 940px;
+	height: 440px;
+	margin:  0 auto;
+	position: relative;
+	background: url(../images/slider-bg.jpg) no-repeat center center;
+	margin-top: 10px;
+	padding: 40px 20px;
+	display: -webkit-flex;
+  	display: flex;
+
+  	-webkit-flex-direction: column;
+  	flex-direction: column;
+
+  	-webkit-justify-content: flex-end;
+  	justify-content: flex-end;
+
+  	-webkit-align-items: center; /* Safari */
+  	align-items: center;
+}
+
+.wrapper-ostale-stranice{
+	width: 940px;
+	margin:  0 auto;
+	position: relative;
+	margin-top: 10px;
+	padding: 40px 20px;
+	background-color: #fff;
+}
+
+.wrapper-ostale-stranice p{
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.wrapper-ostale-stranice h3{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.wrapper-ostale-stranice .podaci{
+	margin-top: 40px;
+}
+
+.wrapper .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.wrapper h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 45px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.wrapper a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.wrapper .slider-opis{
+	z-index: 20;
+}
+
+.container  {
+    width: 100%;
+}
+
+
+header  {
+	display:  block;
+	position:  relative;
+	padding:  20px 0px;
+}
+
+header::before,
+header::after{
+	display: block;
+	content: "";
+	overflow: hidden;
+	height: 0px;
+}
+
+header::after{
+	clear: both;
+}
+
+.clearfix::before,
+.clearfix::after{
+	display: block;
+	content: "";
+	overflow: hidden;
+	height: 0px;
+}
+
+.clearfix::after{
+	clear: both;
+}
+
+.sikalo-logo {
+ 	float:  left;
+ }
+
+.usluge{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.usluga{
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	width: 25%;
+}
+
+.usluga-bg{
+	position: relative;
+    margin-bottom: 30px;
+    min-height: 240px;
+    margin-top: 30px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+}
+
+.usluga-bg h3{
+	z-index: 20;
+	color: #fff;
+}
+
+.usluga-bg.bg-1{
+	background: url('../images/audi-rs7_1.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.usluga-bg.bg-2{
+	background: url('../images/Renault-Captur.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.usluga-bg.bg-3{
+	background: url('../images/medium_under_3.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.usluga-bg.bg-4{
+	background: url('../images/2017-jeep-compass-12.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.usluga-bg.bg-5{
+	background: url('../images/KC_20140614_drive_YS_BMW_03.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.usluga-bg.bg-6{
+	background: url('../images/3-800-2014 chevy spark 061114-70904.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.usluga-bg.bg-7{
+	background: url('../images/ford-mondeo_729.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.usluga-bg.bg-8{
+	background: url('../images/article-2219629-1587DD78000005DC-148_634x300.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.usluga-bg .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+footer{
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	width: 100%;
+	background-color: #111;
+}
